@@ -141,7 +141,7 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
+  margin: 15px auto;
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
@@ -273,3 +273,25 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/** Responsive design for index html**/
+@media screen and (min-width: 576px){
+  #restaurants-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #restaurants-list li{
+    margin: 15px 35px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #restaurants-list li{
+    margin: 15px;
+  }
+}
+
